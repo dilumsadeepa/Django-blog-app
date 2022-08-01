@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% block content %} 
+    <br><br>
+    <div class="row">
+        
+        <div class="col-sm-12 box">
+            <img src="{{ post.image }}" alt="" class="img-fluid">
+            <h1>{{ post.title }}</h1>
+            <h3>{{ post.category }} - {{ post.author }}</h3>
+            <p><b>{{ post.info }}</b></p>
+            <br><hr>
+            <p>{{ post.description }}</p>
+        </div>
+        
+    </div>
+
+
+{% endblock %}
+
+<style>
+    .box{
+        box-shadow: 2px gray;
+    }
+</style>
